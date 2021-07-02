@@ -2,12 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>#TeamNature</title>
-    <link rel="stylesheet" href="CSS\styles.css" />
+    <link rel="stylesheet" href="CSS\styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="container">
+                <h3 class="logo">#Team<span>Nature</span></h3>
+                
+                
+                <div id="mySidenav" class="sidenav">
+                    
+                    <button href="app.js" class="closebtn" onclick="closeNav()">&times;</button>
+                    <a href="#">Home</a>
+                    <a href="#about">About</a>
+                    <a href="ContactUS.html">Contact us</a>
+                    <a href="DonationPage.html">Donate</a>
+                    
+                  </div>
+                  
+                  <!-- Use any element to open the sidenav -->
+                  <span onclick="openNav()"><img src="https://img.icons8.com/carbon-copy/40/000000/menu.png"/></span>
+                  
+            </div>
+        </nav>
+
+        <h1 class="big-title translate" data-speed="0.1">GO GREEN!</h1>
+        
+        
+
+        <img src="img/person.png" class="person translate" data-speed="-0.25" alt="">
+        <img src="img/mountain1.png" class="mountain1 translate" data-speed="-0.2" alt="">
+        <img src="img/mountain2.png" class="mountain2 translate" data-speed="0.4" alt="">
+        <img src="img/mountain3.png" class="mountain3 translate" data-speed="0.3" alt="">
+        <img src="img/sky.png" class="sky translate" data-speed="0.5" alt="">
+    </header>
+
+    <section>
+        <div class="shadow"></div>
+
+        <div id = "about" class="container">
+            <div class="content opacity">
+                <h3 class="title">
+                    About
+                    <div class="border"></div>
+                </h3>
+                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque officiis quos expedita ipsa, a quidem inventore voluptates debitis accusamus tenetur qui et voluptas dicta, culpa earum, doloribus odio consectetur consequuntur soluta quasi nobis! Deserunt voluptatum reiciendis iure expedita sequi quisquam laboriosam temporibus exercitationem.</p>
+            </div>
+            
+
+            <div class="imgContainer opacity">
+                <img src="img\undraw_friendship_mni7.svg" alt="">
+            </div>
+
+            <a class = "btn" href="DonationPage.html" >Donate Now</a>
+        </div>
+
+        <div class="footer">
+            <ul>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i a href="https://www.linkedin.com/in/mihir-chhabria-4bb543207/" class="fab fa-linkedin-in"></i></a></li>
+                <li><i  class="fab fa-youtube"></i></li>
+             </ul>
+        </div>
+    </section>
+
     
+
+    <script src="JS\app.js"></script>
 </body>
 </html>

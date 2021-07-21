@@ -239,7 +239,9 @@
         Name: form.Name.value,
         Message: form.Message.value,
       });
-      console.log("Message delievered....");
+      alert("Message received");
+      form.Name.value='';
+      form.Message.value='';
     });
   </script>
 

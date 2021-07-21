@@ -84,6 +84,9 @@
         justify-items: center;
         
       }
+      p{
+        color:#fff;
+      }
       #contact-us input {
         width: 60%;
         height: 45px;
@@ -161,14 +164,15 @@
           </div>
           <div class="col-xs-12">
             <form id="contact-us" method="POST">
-              <input class="textArea" type="text" placeholder="Enter your name" name="Name" />
-              <input class="textArea" type="email" placeholder="Enter your email" name="Email" />
+              <input class="textArea" type="text" placeholder="Enter your name" name="Name" id="Name" />
+              <input class="textArea" type="email" placeholder="Enter your email" name="Email" id="Email" />
               <input
                 class="textArea"
                 type="tel"
                 maxlength="10"
                 placeholder="Enter your contact number"
                 name="Phone"
+                id = "Phone"
               />
               <textarea
                 class="textArea"
@@ -177,8 +181,10 @@
                 cols="30"
                 rows="10"
                 placeholder="Enter your thoughts"
+                name="Message"
+                id = "Message"
               ></textarea>
-              <button>Submit</button>
+              <button >Submit</button>
             </form>
           </div>
           <div class="col-xs-12">
@@ -235,9 +241,17 @@
         ContactNo: form.Phone.value,
         Message: form.Message.value,
       });
-      console.log("Message delievered....");
+      
+      alert("Message delievered.")
+      Name.value='';
+      Email.value='';
+      Phone.value='';
+      form.Message.value = '';
+      
     });
   </script>
+
+  
 
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
